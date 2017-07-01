@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/opcoesDaPagina.css">
+    <link rel="stylesheet" href="css/cartao.css">
+    <link rel="stylesheet" href="css/opcoesDoCartao.css">
+    <link rel="stylesheet" href="css/novoCartao.css">
+
+    <title>Projeto Ceep</title>
+  </head>
+
+  <body>
+      <header class="cabecalho container">
+        <h1 class="cabecalho-logo">Ceep</h1>
+
+        <div class="opcoesDaPagina">
+          <input type="search" id="busca" placeholder="busca">
+            <button id="mudaLayout" type="button" class="opcoesDaPagina-opcao opcoesDaPagina-botao">
+              Linhas
+            </button>
+        </div>
+
+      </header>
+
+      <form id="novoCartao" class="novoCartao container" >
+          <textarea class="novoCartao-conteudo" name="novoCartao-conteudo" placeholder="Digite aqui o conteúdo"></textarea>
+          <input type="submit" value="Salvar" class="novoCartao-salvar">
+      </form>
+
+      <section class="mural container">
+
+
+      </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/ctrlcartao.js"></script>
+    <script src="js/mudalayout.js"></script>
+    <script src="js/removecartao.js"></script>
+    <script src="js/adicionacartao.js"></script>
+    <script src="js/principal.js"></script>
+
+  </body>
+
+</html>
