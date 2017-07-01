@@ -18,6 +18,15 @@ function(res){
 $('#sync').click(function(){
 	//$('#sync').removeClass('botaoSync--sincronizado');
 	//$('#sync').addClass('botaoSync--esperando')
+	$(document).trigger('precisaSincronizar')
+
+	
+});
+
+$(document).on('precisaSincronizar', function(){
+	console.log('Ja vai sincronizar')
+	$('#sync').removeClass('botaoSync--sincronizado');
+	$('#sync').addClass('botaoSync--esperando');
 	var cartoes = [];
 
 	$('.cartao').each(function(){
@@ -48,6 +57,6 @@ $('#sync').click(function(){
 			$('#sync').removeClass('botaoSync--esperando')
 		}
 	});
-	
+
 });
 

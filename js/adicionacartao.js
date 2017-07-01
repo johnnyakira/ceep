@@ -15,6 +15,7 @@
         if(conteudo){
 
               ctrlCartao.adicionaCartao(conteudo)
+              $(document).trigger('precisaSincronizar')
 
         }
           campoTexto.val('')
