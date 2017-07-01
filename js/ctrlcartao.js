@@ -1,7 +1,7 @@
 var ctrlCartao = (function(){
 	var contador = 0
 
-	function adicionaCartao(conteudo){
+	function adicionaCartao(conteudo, cor){
 		contador++
 
               var buttonOpcoes = $('<button>').addClass('opcoesDoCartao-opcao')
@@ -24,6 +24,8 @@ var ctrlCartao = (function(){
                                      .append(divOpcoes)
                                      .append(cartaoConteudo)
                                      .prependTo('.mural')
+                                     .css('background-color', cor)
+                                     .prependTo('.mural');
 
               
 	}
